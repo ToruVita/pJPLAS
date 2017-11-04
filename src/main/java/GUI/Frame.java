@@ -62,10 +62,7 @@ public class Frame extends JFrame implements ActionListener {
 		this.setIconImage(createIcon(""));
 		setVisible(true);
 	}
-	public static void main(String[] args){
-		Frame f = new Frame();
-		f.setDefaultMenu();
-	}
+
 	public void setDefaultMenu(){
 		addMenu("File","Load,Save,-,Start,-,eXit".split(","));
 //		addMenu("File","Load,Save,reMakeTitle,-,Start,-,eXit".split(","));
