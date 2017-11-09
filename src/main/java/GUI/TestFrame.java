@@ -12,9 +12,11 @@ public class TestFrame extends Frame {
 		setDefaultMenu();
 		ConfPanel cp = new ConfPanel();
 		cp.setConf("Oro", new Date());
-		cp.setConf("Oro2", "H265");
+		cp.setConf("Oro2", "Sample2");
 		cp.setConf("OroF", new File("/"));
-		cp.setConf("Oro3", new Integer(23));
+		for(int i = 0; i < 30; i++){
+			cp.setConf("Or"+i, new Integer(i));
+		}
 		setPlate(cp);
 		Object o = new File("c:\\");
 		System.out.println(o.toString());
